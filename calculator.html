@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link href="Content/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-12 col-md-offset-5">
+            <div style="margin-bottom: 10px;">
+                <a href="calculator.html">Calculator</a>
+                <a href="registrationForm.html">Registration</a>
+                <a href="feedbackForm.html">Feedback</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-md-offset-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <form name="calculator">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input class="displayText" type="text" name="ans" value="">
+                                </div>
+                            </div>
+                            <div class="btnContainer">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <input class="clearBtn" type="reset" value="CE">
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="+/-" onClick="document.calculator.ans.value+='-'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="%" onClick="document.calculator.ans.value+='%'">
+                                    </div>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="7" onClick="document.calculator.ans.value+='7'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="8" onClick="document.calculator.ans.value+='8'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="9" onClick="document.calculator.ans.value+='9'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="/" onClick="document.calculator.ans.value+='/'">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="4" onClick="document.calculator.ans.value+='4'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="5" onClick="document.calculator.ans.value+='5'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="6" onClick="document.calculator.ans.value+='6'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="x" onClick="document.calculator.ans.value+='*'">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="1" onClick="document.calculator.ans.value+='1'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="2" onClick="document.calculator.ans.value+='2'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="3" onClick="document.calculator.ans.value+='3'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="-" onClick="document.calculator.ans.value+='-'">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="0" onClick="document.calculator.ans.value+='0'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="." onClick="document.calculator.ans.value+='.'">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <input class="calcBtn" type="button" value="+" onClick="document.calculator.ans.value+='+'">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
